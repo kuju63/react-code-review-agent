@@ -3,6 +3,8 @@
 		"strands-agents": {
 			"command": "uvx",
 			"args": [
+                "-p",
+                "3.12",
 				"strands-agents-mcp-server"
 			],
 			"type": "stdio"

@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "strands-agents": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": ["-p", "3.12", "strands-agents-mcp-server"],
+      "timeout": 180000
+    },
+    "serena": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "-p", "3.12",
+        "--from", "git+https://github.com/oraios/serena",
+        "serena",
+        "start-mcp-server",
+        "--context=ide",
+        "--project-from-cwd"
+      ]
+    }
+  }
+}
