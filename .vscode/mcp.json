@@ -1,0 +1,26 @@
+{
+	"servers": {
+		"strands-agents": {
+			"command": "uvx",
+			"args": [
+				"strands-agents-mcp-server"
+			],
+			"type": "stdio"
+		},
+		"serena": {
+			"type": "stdio",
+			"command": "uvx",
+			"args": [
+				"-p",
+				"3.12",
+				"--from",
+				"git+https://github.com/oraios/serena",
+				"serena",
+				"start-mcp-server",
+				"--context=vscode",
+				"--project-from-cwd"
+			]
+		}
+	},
+	"inputs": []
+}

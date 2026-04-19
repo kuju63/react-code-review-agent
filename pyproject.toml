@@ -1,0 +1,41 @@
+[build-system]
+requires = ["uv_build >= 0.11.6, <0.12.0"]
+build-backend = "uv_build"
+
+[project]
+name = "frontend-review-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "strands-agents"
+]
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "ruff",
+    "black",
+    "mypy",
+    "strands-agents-tools",
+    "strands-agents-builder"
+]
+
+[tool.ruff]
+line-length = 88 # Black と合わせる
+select = ["E", "F", "W", "I", "UP"] # 有効にするルール (例: Flake8標準 + isort + pyupgrade)
+ignore = []
+
+[tool.ruff.format] # Ruff のフォーマッタを使う場合 (Black の代替)
+quote-style = "double"
+
+[tool.black]
+line-length = 88
+
+[tool.mypy]
+python_version = "3.11" # プロジェクトのPythonバージョン
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true # 必要に応じて設定
