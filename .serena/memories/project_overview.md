@@ -1,0 +1,4 @@
+- Purpose: Reactコードレビューエージェントを Strands で実装する Python プロジェクト。
+- Stack: Python 3.12+, pyproject.toml, uv_build, pytest, ruff, black, mypy, strands-agents。
+- Structure: src/frontend_review_agent/ に実装、tests/ にテスト。現在は最小構成。
+- Environment: Windows 前提の作業あり。

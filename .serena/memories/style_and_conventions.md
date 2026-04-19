@@ -1,0 +1,5 @@
+- PEP8/PEP517/PEP518 準拠。
+- 型ヒント必須。
+- docstring は Google スタイル。
+- 依存追加時は pyproject.toml を更新。
+- Ruff line-length=88、Black line-length=88、Ruff format quote-style=double。

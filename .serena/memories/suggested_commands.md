@@ -1,0 +1,8 @@
+- 依存導入: uv pip install -e .
+- テスト: pytest
+- カバレッジ: pytest --cov=src --cov-report=term-missing --cov-report=html
+- 整形: black src/ tests/
+- Lint: ruff src/ tests/
+- 型チェック: mypy src/
+- 実行: python -m src.frontend-review-agent.main
+- Windows 基本操作: Get-ChildItem, Set-Location, rg, git

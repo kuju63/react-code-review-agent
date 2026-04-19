@@ -1,0 +1,3 @@
+- 変更後は少なくとも formatter/linter/test の必要なコマンドを実行して確認する。
+- このリポジトリでは TDD 前提で Red/Green/Refactor を意識する。
+- レビュー関連では指摘に必ず reply し、LGTM のみ main マージ対象。 
